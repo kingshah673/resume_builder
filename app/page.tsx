@@ -188,7 +188,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-lg font-medium text-slate-700">
-                    {isLoading ? 'Extracting with Mistral...' : 'Click to upload or drag and drop'}
+                    {isLoading ? 'Extracting with AI...' : 'Click to upload or drag and drop'}
                   </p>
                   <p className="text-sm text-slate-500 mt-1">Free Hugging Face Inference Active</p>
                 </div>
@@ -231,6 +231,67 @@ export default function Home() {
             </div>
           </div>
         )}
+
+        {/* Honesty & Transparency Section */}
+        <section className="mt-24 pt-12 border-t border-slate-200">
+          <div className="flex flex-col md:flex-row gap-12 items-start">
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <span className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                </span>
+                Our Commitment to Honesty
+              </h3>
+              <p className="text-slate-600 mb-6 leading-relaxed">
+                We believe in being 100% transparent with you. This tool is designed to save you time,
+                but it is powered by AI, which means it is not perfect.
+              </p>
+              <div className="space-y-4">
+                <div className="flex gap-3">
+                  <div className="mt-1 text-emerald-600">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-800">Human-in-the-loop</h4>
+                    <p className="text-sm text-slate-500 text-pretty">The AI parses your resume, but you should always review the JSON editor results. We've made it easy for you to correct any mistakes.</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="mt-1 text-emerald-600">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-800">Privacy First</h4>
+                    <p className="text-sm text-slate-500 text-pretty">Your data is processed via Hugging Face's secure inference API. We do not store your personal resume data on our servers after processing.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex-1 bg-indigo-900 rounded-2xl p-8 text-white shadow-xl">
+              <h4 className="text-lg font-bold mb-4">How it works (The Tech)</h4>
+              <ul className="space-y-3 text-indigo-100 text-sm">
+                <li className="flex gap-2">
+                  <span className="text-indigo-400">▹</span>
+                  <span>Model: <strong>Qwen2.5-7B-Instruct</strong> via Hugging Face</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-indigo-400">▹</span>
+                  <span>Method: Zero-shot JSON extraction</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-indigo-400">▹</span>
+                  <span>Safety: No long-term data persistence</span>
+                </li>
+              </ul>
+              <div className="mt-8 pt-8 border-t border-indigo-800 flex items-center justify-between">
+                <span className="text-xs uppercase tracking-wider text-indigo-400 font-bold">Marketing Strategy: Verified Honest</span>
+                <div className="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
