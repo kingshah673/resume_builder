@@ -24,8 +24,8 @@ Based on the strategy: **Goals, Personas, Channels, and Tasks.**
 
 ## 5. Marketing Tasks
 - [x] **Task 1**: Update Landing Page with "Honesty & Transparency" section.
-- [ ] **Task 2**: Create a "Resume Guide" page in the app explaining these truths.
-- [ ] **Task 3**: Share "Myth vs Truth" carousel on LinkedIn.
+- [x] **Task 2**: Create a "Resume Guide" page in the app explaining these truths.
+- [x] **Task 3**: Share "Myth vs Truth" carousel on LinkedIn.
 
 ---
 *Inspired by: "What is a marketing strategy?" & ATS Insights*
